@@ -3,3 +3,7 @@ Device repository for Oukitel K6000 CM12.1
 
 Currently broken features:
  * Fm
+ 
+ # Thx to
+ * Olegsvs
+ * Visi0nary
