@@ -28,6 +28,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcurl \
 
+# Network dependency
+PRODUCT_PACKAGES += \
+    	libifaddrs	
+
 PRODUCT_COPY_FILES += \
 	device/oukitel/k6000/rootdir/init.mt6735.rc:root/init.mt6735.rc \
 	device/oukitel/k6000/rootdir/init.xlog.rc:root/init.xlog.rc \
@@ -108,12 +112,16 @@ PRODUCT_PACKAGES += \
 
 # Wifi
 PRODUCT_PACKAGES += \
-    lib_driver_cmd_mt66xx \
-    libwpa_client \
-    hostapd \
-    dhcpcd.conf \
-    wpa_supplicant \
-    wpa_supplicant.conf
+    	lib_driver_cmd_mt66xx \
+    	libwifi-hal-mt66xx \
+    	wifi_hal \
+    	libwpa_client \
+    	hostapd \
+    	hostapd_cli \
+    	dhcpcd.conf \
+    	wpa_supplicant \
+    	wpa_supplicant.conf \
+	libnl_2
 
 PRODUCT_PACKAGES += \
     libnl_2 \

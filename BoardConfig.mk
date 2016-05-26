@@ -122,7 +122,7 @@ TARGET_PROVIDES_INIT_RC := true
 
 #EGL settings
 USE_OPENGL_RENDERER := true
-BOARD_EGL_CFG := device/oukitel/k6000/egl.cfg
+BOARD_EGL_CFG := device/oukitel/k6000/configs/egl.cfg
 
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun/file
 
